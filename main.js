@@ -123,6 +123,7 @@ var diamondSquare = {
 			//Если был изменен размер - пытаемся обновить без повторного рендеринга
 			var du = $T.canvas.toDataURL();
 			$T.canvas[n]=v;
+			$T.canvas.parentNode.style[n]=v+'px';
 			var ctx = $T.canvas.getContext('2d');
 			var Img = new Image();
 			Img.onload=function(){
@@ -157,7 +158,7 @@ var diamondSquare = {
 		this.canvas.height=h;
 		
 		
-		var cBox =  createEl(false,'div',{style:{display:'inline-block',margin:'5px 0',background:'url('+bgc+')'}}); 
+		var cBox =  createEl(false,'div',{style:{display:'inline-block',margin:'5px 0',background:'url('+bgc+')', width : w+'px', height:h+'px',overflow:'hidden'}}); 
 		cBox.appendChild(this.canvas);
 		box.appendChild(cBox);
 		this.SaveBTN.href=this.canvas.toDataURL();
