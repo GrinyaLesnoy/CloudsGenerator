@@ -162,7 +162,7 @@ var diamondSquare = {
 		cBox.appendChild(this.canvas);
 		box.appendChild(cBox);
 		this.SaveBTN.href=this.canvas.toDataURL();
-		createEl(box,'div',{}).innerHTML='ver 0.2 | <a href="https://github.com/GrinyaLesnoy">Grinya Lesnoy</a> | License: MIT';  
+		createEl(box,'div',{}).innerHTML='ver 0.2 | <a href="https://github.com/GrinyaLesnoy">Grinya Lesnoy</a> | License: MIT | <a href="https://github.com/GrinyaLesnoy/CloudsGenerator">Source</a>';  
 	}, 
 	Map : {},
 	GenerateComplite : false,
